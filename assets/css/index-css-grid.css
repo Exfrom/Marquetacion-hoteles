@@ -59,7 +59,7 @@ nav{
 }
 .logo img{
     grid-area: logo-img;
-    width: 40%;
+    width: 30%;
 }
 .logo i{
     grid-area: menu-bars;
@@ -105,11 +105,16 @@ nav a:hover {
     z-index: 100;
 }
 
-
-
 #banner{
     grid-area:banner;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-image: url(../img/index/slide1.jpg);
+    background-size: cover;
 }
+
+
 #descripcion{
     grid-area:descripcion;
 }
