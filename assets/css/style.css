@@ -1,45 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-:root{
-  --azulclaro: #48D6ED;
-  --azuloscuro: #337AB7;
-  --azulnegro: #303342;
-  --negro: #333333;
-  --negro2: #000;
-  --gris: #B2B3B3;
-  --fondo: #FFFEFC;
-  --verdeazul: #157A8A;
-  --Magenta: #9C2759;
-  --blanco: #fff;
-  --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+
+:root {
+    --azulclaro: #48D6ED;
+    --azuloscuro: #337AB7;
+    --azulnegro: #303342;
+    --negro: #333333;
+    --negro2: #000;
+    --gris: #B2B3B3;
+    --fondo: #FFFEFC;
+    --verdeazul: #157A8A;
+    --Magenta: #9C2759;
+    --blanco: #fff;
+    --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     border: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
-h1,h2,h3,h4,h5{
+
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Marcellus', serif;
 }
 
-header{
+header {
     display: flex;
     background-color: var(--azulnegro);
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
 }
-.logo img{
+
+.logo img {
     width: 150px;
 }
 
-nav a{
+nav a {
     font-family: 'Marcellus', serif;
     color: var(--blanco);
     font-size: 1.5rem;
@@ -47,17 +54,17 @@ nav a{
     padding: 0 1rem;
 }
 
-.btn-azul{
+.btn-azul {
     background-color: var(--azuloscuro);
     color: var(--blanco);
-    padding: 0.5rem 1rem ;
+    padding: 0.5rem 1rem;
     font-family: 'Marcellus', serif;
     font-size: 1.5rem;
     border-radius: 5px;
     cursor: pointer;
 }
 
-#banner{
+#banner {
     background-image: url("../img/index/slide1.jpg");
     height: 500px;
     background-size: cover;
@@ -65,48 +72,57 @@ nav a{
     flex-direction: column-reverse;
 }
 
-#banner h2{
-    background-color: rgba(0,0,0,0.2);
+#banner h2 {
+    background-color: rgba(0, 0, 0, 0.2);
     color: var(--blanco);
     font-size: 1.8rem;
     padding: 0.5rem 1rem;
     font-family: 'Roboto', sans-serif;
 }
 
-#description{
+#description {
     display: flex;
+    margin: 3rem 3rem;
 }
-.text-description{
-    font-size: 1.2rem;
-    padding: 3.2rem;
+
+.text-description {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
     text-align: justify;
 }
-.logo-descriptiob{
-    
+
+.logo-descriptiob img {
+    height: 200px;
+    width: 500px;
+    padding: 0% 1rem;
 }
-#feature{
+
+#feature {
     background-image: url("../img/index/bg-features.png");
     background-size: cover;
     padding-top: 1rem;
     padding-bottom: 1rem;
     background-position: 50% 50%;
 }
-.feature-row{
+
+.feature-row {
     display: flex;
     justify-content: space-around;
     margin-top: 1rem;
     flex-wrap: wrap;
-    
+
 }
-#feature h2{
+
+#feature h2 {
     text-align: center;
     color: var(--blanco);
-    background-color: rgba(0, 0, 0, 0.2);  
+    background-color: rgba(0, 0, 0, 0.2);
     font-size: 2rem;
     text-shadow: 3px 3px 3px #000;
     font-weight: 100;
 }
-.feature-box{
+
+.feature-box {
     text-align: center;
     padding: 1rem 1.5rem;
     border-radius: 3px;
@@ -114,39 +130,47 @@ nav a{
     font-size: 3rem;
     margin: 1rem;
 }
-.feature-box h3{
+
+.feature-box h3 {
     margin-top: 1rem;
     font-size: 1.5rem;
     font-family: 'Roboto', sans-serif;
 }
 
-.box-dark{
+.box-dark {
     background-color: rgba(0, 0, 0, 0.5)
 }
 
-.box-blue{
+.box-blue {
     background-color: #00325eae;
 }
-#ubicacion{
+
+#ubicacion {
     display: flex;
     flex-direction: column;
 }
-.titulo-ubicacion{
+
+.titulo-ubicacion {
     text-align: center;
     font-size: 2rem;
     padding: 1.5rem;
 }
-.ubicacion-mapa{
+
+.ubicacion-mapa {
     text-align: center;
-} 
-.ubicacion-mapa iframe{
+}
+
+.ubicacion-mapa iframe {
     width: 95%;
     height: 480px;
 }
-.direccion-info{
+
+.direccion-info {
     text-align: center;
+    font-size: 1.5rem;
 }
-#Opiniones{
+
+#Opiniones {
     text-align: center;
     background-image: url("../img/opinion/vector-comentarios.svg");
     color: #fff;
@@ -154,10 +178,12 @@ nav a{
     font-family: 'Marcellus', serif;
     font-size: 1rem;
 }
-.opiniones{
+
+.opiniones {
     display: flex;
 }
-.opiniones-box{
+
+.opiniones-box {
     font-family: 'Marcellus', serif;
     flex-direction: row;
     background-color: #0B3860;
@@ -166,61 +192,74 @@ nav a{
     padding: 1.5rem;
     margin: 1.5rem;
 }
-.opiniones-box img{
+
+.opiniones-box img {
     border-radius: 100%;
     height: 5rem;
     font-size: 1rem;
 }
 
-#footer{
+#footer {
     font-weight: normal;
     color: var(--blanco);
-    background-color:var(--negro);  
+    background-color: var(--negro);
+    padding: 0 auto;
 }
-#footer hr{
-    margin: 1rem 0;
+
+#footer hr {
+    display: flex;
+    margin: 1.8rem 0;
 }
-.footer-info{
+
+.footer-info {
     display: flex;
     padding: 0.5rem;
-    
 }
-.footer-block{
+
+.footer-block {
     display: flex;
-    margin:1rem 0;
+    margin: 1rem 0;
     align-items: center;
 }
-.footer-block  h1 {
+
+.footer-block h1 {
     display: flex;
     font-weight: normal;
     align-items: center;
+    font-size: 1.3rem;
 }
+
 .footer-block h2 {
     display: flex;
     font-weight: normal;
     font-size: 1rem;
-    width:70%;
+    width: 70%;
 }
-.footer-block i{
+
+.footer-block i {
     display: flex;
-    font-size:1rem;
+    font-size: 1rem;
     padding: 1rem;
 }
-.footer-politic{
-    display: flex;
-    justify-content: space-between;    
+
+.footer-politic {
+    justify-content: space-between;
 }
-.footer-politic h2{
-    font-size:1rem;
+
+.footer-politic h2 {
+    display: flex;
+    font-size: 1rem;
     font-weight: normal;
 }
-.footer-icons{
+
+.footer-icons {
     display: flex;
     flex-direction: row;
-    margin:0 2.2rem;
+    margin: 0 2.2rem;
     align-items: center;
 }
-.footer-icons i{
-    font-size:1rem;
+
+.footer-icons i {
+    font-size: 1rem;
     margin-right: 1.5rem;
 }
